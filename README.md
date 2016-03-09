@@ -12,12 +12,13 @@ This is just an experiment for now and should not be used in prodcution code.
 In the following example a special `#` keyword is used to capture all the arguments of the macro in a single variable `nums`.
 
 ```ocaml
-(* Define a macro: *)
+(* Define a macro to compute an average of all its arguments. *)
 let%macro avg #nums =
   List.fold_left (+) 0 nums / List.length nums
   
-(* Can be used as: *)
-let () = assert ((avg 1 2 3) = 2)
+(* Let's try it now! *)
+# avg 1 2 3
+- : int = 2
 ```
 
 Another common use case for macros is quoting and unquting of code.
