@@ -6,6 +6,9 @@ With this extension you can define functions that can match syntax constructs an
 
 This is just an experiment for now and should not be used in prodcution code.
 
+**Related projects**:
+
+- [ppx_rule](https://github.com/rizo/ppx_rule) - Compile-time rewrite rules for OCaml.
 
 ## Examples
 
