@@ -15,6 +15,7 @@ build:
 
 test: build
 	ocamlopt -ppx ./$(TARGET).native ./tests/test_$(TARGET).ml -o ./test_ppx_rule.native
+	./test_ppx_rule.native
 
 process: build
 	ocamlopt -dsource -ppx ./$(TARGET).native ./tests/test_$(TARGET).ml -o ./test_ppx_rule.native
