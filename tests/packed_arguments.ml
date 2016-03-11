@@ -1,9 +1,11 @@
 
-let%macro unless condition body =
-  if not condition then body
+let%macro avg (Pack nums) =
+  List.(fold_left (+) 0 nums / length nums)
 
 let () =
-  unless (2 + 3 = 5) (print_endline "Math is ok")
+  let result = avg 1 2 3 4 5 6 in
+  print_endline ("result = " ^ string_of_int result)
+
 
 (* Will be processed to:
 
