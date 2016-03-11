@@ -5,6 +5,7 @@ Random notes describing the development details of the `ppx_macro` extension.
 **Tasks**:
 
 - [x] Implement simple, argument binding without `env` (no closures).
+- [x] Add support for _rest_ argument packing.
 - [ ] Decide how complex scoping will work.
 - [ ] Define quote and unquote.
 

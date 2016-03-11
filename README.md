@@ -12,14 +12,12 @@ This is just an experiment for now and should not be used in prodcution code.
 
 ## Examples
 
-In the following example a special `#` keyword is used to capture all the arguments of the macro in a single variable `nums`.
+In the following example a special `Pack` keyword is used to capture all the arguments of the macro in a single variable `nums`.
 
 ```ocaml
 (* Define a macro to compute an average of all its arguments. *)
-let%macro avg #nums =
-  let total, count =
-    List.fold_left (fun (t, c) x -> t + x, c + 1) (0, 0) nums in
-  total / count
+let%macro avg (Pack nums) =
+  List.(fold_left (+) 0 nums / length nums)
   
 (* Let's try it now! *)
 # avg 1 2 3
