@@ -7,7 +7,7 @@ let () =
   print_endline ("result = " ^ string_of_int result)
 
 
-(* After processing the current file look like:
+(* Will be processed to:
 
   let () =
     let result =
