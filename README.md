@@ -4,7 +4,7 @@ A syntax extension that helps you build syntax extensions.
 
 With this extension you can define functions that can match syntax constructs and perform compile-time transformations.
 
-This is just an experiment for now and should not be used in prodcution code.
+This is an ongoing experiment for now and should not be used in prodcution code.
 
 **Related projects**:
 
