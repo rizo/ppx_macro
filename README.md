@@ -16,7 +16,7 @@ In the following example a special `#` keyword is used to capture all the argume
 
 ```ocaml
 (* Define a macro to compute an average of all its arguments. *)
-let%macro avg #nums =
+let%macro avg x (Pack nums) =
   let total, count =
     List.fold_left (fun (t, c) x -> t + x, c + 1) (0, 0) nums in
   total / count
