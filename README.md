@@ -12,7 +12,7 @@ This is just an experiment for now and should not be used in prodcution code.
 
 ## Examples
 
-In the following example a special `#` keyword is used to capture all the arguments of the macro in a single variable `nums`.
+In the following example a special `Pack` keyword is used to capture all the arguments of the macro in a single variable `nums`.
 
 ```ocaml
 (* Define a macro to compute an average of all its arguments. *)
